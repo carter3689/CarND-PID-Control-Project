@@ -1,6 +1,9 @@
 #ifndef PID_H
 #define PID_H
 
+#include <iostream>
+#include <cmath>
+
 class PID {
 public:
   /*
@@ -12,7 +15,7 @@ public:
 
   /*
   * Coefficients
-  */ 
+  */
   double Kp;
   double Ki;
   double Kd;
@@ -41,6 +44,11 @@ public:
   * Calculate the total PID error.
   */
   double TotalError();
+
+  double best_error = 999.9;
+  int last_optimize_index = 0;
+  int current_state = 0; // possible values 0, 1,2, 3
+
 };
 
 #endif /* PID_H */
