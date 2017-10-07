@@ -1,8 +1,21 @@
 # CarND-Controls-PID
 Self-Driving Car Engineer Nanodegree Program
+# Reflections on Project
+---
+The Project code was pretty straightforward especially after following the walk-through to make sure I only touched the files needed.
+When initially starting to test the project, things were pretty bad. I spent at least an hour trying to tune parameters and I wasn't very sure what was going on.
+I started to notice that my car was swerving alot towards the middle of the track and this came after hand tuning and things *looked* as if they were going to keep moving smoothly.
+I went back to the drawing board, starting with the lesson on Twiddle. This was pretty frustrating because I thought it couldn't be done based on the way the simulator worked.
+After much research and pacing the floor (literally) I found a way to add Twiddle to my solution.
+I also found that removing the I parameter helped keep the car in the most centered position (give or take a few slight movements).
+
+# Add-Ons
+---
+* Reduced the speed during turns (0.1)
 
 ---
-
+[*Check Out the Video!*](https://youtu.be/7uUvlD6-ROA)
+---
 ## Dependencies
 
 * cmake >= 3.5
@@ -23,7 +36,7 @@ Self-Driving Car Engineer Nanodegree Program
 1. Clone this repo.
 2. Make a build directory: `mkdir build && cd build`
 3. Compile: `cmake .. && make`
-4. Run it: `./pid`. 
+4. Run it: `./pid`.
 
 ## Editor Settings
 
